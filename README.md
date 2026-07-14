@@ -1,156 +1,69 @@
-# MERN CRM - Customer Management System
+Final Project | CRM @[ArkX](https://www.arkx.group/)
 
-## Overview
+## Introduction: What is a CRM?
+[**Customer relationship management (CRM)**](https://www.salesforce.com/crm/what-is-crm/) is a technology for managing all your company’s relationships and interactions with customers and potential customers. The goal is simple: Improve business relationships to grow your business. A CRM system helps companies stay connected to customers, streamline processes, and improve profitability.
 
-MERN CRM is a full-stack Customer Relationship Management (CRM) application built using the MERN stack (MongoDB, Express.js, React.js, and Node.js). The system helps organizations efficiently manage customers, companies, contacts, deals, tasks, and user authentication through a modern web interface.
+a **CRM system**, on the other hand is a tool that helps with contact management, sales management, agent productivity, and more. CRM tools can now be used to manage customer relationships across the entire customer lifecycle, spanning marketing, sales, digital commerce, and customer service interactions.
 
----
+## Description
+Given the critical importance of such tool in modern business operations, this project builds a Customer Relationship Management (CRM) system using the MERN stack (MongoDB, Express, React, Node.js). The CRM aims to improve customer interaction management and sales efficiency for businesses, particularly focusing on **general business needs**. However, the core functionalities can be easily adapted to various industries.
 
-## Features
+## Key Functionalities
+- **Contact Management**: Create, store, and manage detailed contact information for leads, customers, and other business associates.
+- **Sales Pipeline Management**: Track deals through various stages of the sales pipeline.
+- **Task Management**: Assign and track tasks related to sales, customer interactions, and other business activities, improving team collaboration and organization.
+- **Reporting**: Generate reports to gain insights into sales performance, customer trends, and identify areas for improvement.
 
-- User Authentication
-- Dashboard with Analytics
-- Customer Management
-- Company Management
-- Contact Management
-- Deal Management
-- Task Management
-- REST API
-- Secure JWT Authentication
-- Responsive User Interface
+Please check out [ROADMAP.md](ROADMAP.md) for a full breakdown of the functionalities we aim to implement.
 
----
-
-## Technology Stack
-
-### Frontend
-- React.js
-- Vite
-- Redux Toolkit
-- Tailwind CSS
-- Chart.js
-
-### Backend
-- Node.js
-- Express.js
-- MongoDB
-- Mongoose
-- JWT Authentication
-
-### Development Tools
-- Git & GitHub
-- VS Code
-- Postman
-
----
-
-## Project Structure
-
-```
-mern-crm-dev/
-│
-├── client/
-│   ├── src/
-│   ├── public/
-│   └── package.json
-│
-├── server/
-│   ├── src/
-│   ├── openapi.yaml
-│   ├── server.js
-│   └── package.json
-│
-├── README.md
-└── ROADMAP.md
-```
-
----
+## Evaluation Criteria
+- Functionality: Completeness and effectiveness of the implemented features.
+- User Interface (UI) and User Experience (UX): Design, ease of use, and overall user experience.
+- Code Quality: Code structure, readability, maintainability, and adherence to best practices.
+- Documentation: Clarity and comprehensiveness of the project's documentation
+- Team Organization and Collaboration: effective communication and demonstrated collaboration through a presentation.
 
 ## Installation
+**Prerequisites:** Node.js and npm (or yarn) installed on your system. You can download them from the official Node.js website: [https://nodejs.org/en](https://nodejs.org/en)
 
-### Clone Repository
 
-```bash
-git clone <repository-url>
-```
+1. Clone the repository:
 
-### Install Frontend
+   ```bash
+   git clone https://github.com/spytech-arkx/mern-crm
+   ```
 
-```bash
-cd client
-npm install
-```
+2. Navigate to the project directory:
 
-### Install Backend
+   ```bash
+   cd mern-crm
+   ```
 
-```bash
-cd ../server
-npm install
-```
+3. Install server and client dependencies :
 
----
+   ```bash
+   cd client
+   npm install 
+   ```
 
-## Environment Variables
+    ```bash
+   cd server
+   npm install 
+   ```
 
-Create a `.env` file inside the server folder and configure the required environment variables.
+4. Create a local `.env` based of the `.env.example` or use the normalized version found @Discord.
 
-Example:
+5. run both servers: 
+   ```bash
+   # mern-crm/server
+   nodemon
+   ```
 
-```
-PORT=5000
-MONGO_URI=your_mongodb_connection
-JWT_SECRET=your_secret_key
-```
+    ```bash
+   # mern-crm/client
+   node --run dev # (Node v22.0.0)
+   npm run dev # if not
+   ```
 
----
-
-## Run Project
-
-Backend
-
-```bash
-npm run dev
-```
-
-Frontend
-
-```bash
-npm run dev
-```
-
----
-
-## Modules
-
-- Authentication Module
-- Dashboard Module
-- Customer Module
-- Company Module
-- Contact Module
-- Deal Module
-- Task Module
-
----
-
-## API Documentation
-
-The API documentation is available in:
-
-```
-server/openapi.yaml
-```
-
----
-
-## Future Enhancements
-
-- Email Notifications
-- Role-Based Access Control
-- Calendar Integration
-- Advanced Reports
-- Cloud Deployment
-
----
-
-## Author
-P.Dwaraka
+## Contributing
+Please check out the [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines about how to contribute to the CRM project's codebase.
